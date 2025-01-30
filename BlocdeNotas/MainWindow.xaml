@@ -6,12 +6,12 @@
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Archivo">
                 <MenuItem Header="Abrir" Click="AbrirArchivo"/>
-                <MenuItem Header="Guardar" Click="GuardarArchivo"/>
+                <MenuItem x:Name="Guardadito" Header="Guardar" IsEnabled="False" Click="GuardarArchivo"/>
             </MenuItem>
         </Menu>
         <StackPanel>
             <Button Content="Limpiar texto" Click="BorrarTexto" Margin="10" HorizontalAlignment="Left"/>
-            <TextBox Name="txtEditor" AcceptsReturn="True" AcceptsTab="True" FontFamily="Consolas" FontSize="14" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="250"/>
+            <TextBox Name="txtEditor" TextChanged="txtEditor_TextChanged" AcceptsReturn="True" AcceptsTab="True" FontFamily="Consolas" FontSize="14" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="250"/>
         </StackPanel>
     </DockPanel>
 </Window>

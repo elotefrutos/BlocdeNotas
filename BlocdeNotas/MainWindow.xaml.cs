@@ -50,6 +50,11 @@ namespace BlocDeNotas
         {
             txtEditor.Clear();
         }
+
+        private void txtEditor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Guardadito.IsEnabled = true;
+        }
     }
 }
 
