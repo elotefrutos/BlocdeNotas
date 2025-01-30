@@ -9,9 +9,9 @@
                 <MenuItem x:Name="Guardadito" Header="Guardar" IsEnabled="False" Click="GuardarArchivo"/>
             </MenuItem>
         </Menu>
-        <StackPanel>
-            <Button Content="Limpiar texto" Click="BorrarTexto" Margin="10" HorizontalAlignment="Left"/>
-            <TextBox Name="txtEditor" TextChanged="txtEditor_TextChanged" AcceptsReturn="True" AcceptsTab="True" FontFamily="Consolas" FontSize="14" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="250"/>
-        </StackPanel>
+        <DockPanel>
+            <Button DockPanel.Dock="Top" Content="Limpiar texto" Click="BorrarTexto" Margin="10" HorizontalAlignment="Left"/>
+            <TextBox Name="txtEditor" TextChanged="txtEditor_TextChanged" AcceptsReturn="True" AcceptsTab="True" FontFamily="Consolas" FontSize="14" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        </DockPanel>
     </DockPanel>
 </Window>
